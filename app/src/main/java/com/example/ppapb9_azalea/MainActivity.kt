@@ -12,6 +12,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        replacefragment(Home())
+
+        binding.bottomNav.setOnItemSelectedListener{
+            when(it.itemId){
+                R.id.home -> replacefragment(Home())
+                R.id.notif -> replacefragment(Notification())
+                R.id.profile -> replacefragment(Profile())
+
+                else -> {}
+            }
+            true
+        }
     }
 
     private fun replacefragment(fragment : Fragment){
