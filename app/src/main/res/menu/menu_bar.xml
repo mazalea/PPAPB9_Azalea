@@ -4,10 +4,7 @@
     <item android:title="Home"
         android:id="@+id/home"
         android:icon="@drawable/ic_baseline_home_24"/>
-    <item android:title="Notification"
-        android:id="@+id/notif"
-        android:icon="@drawable/ic_baseline_notifications_24"/>
-    <item android:title="Profile"
-        android:id="@+id/profile"
-        android:icon="@drawable/ic_baseline_person_24"/>
+    <item android:title="Order"
+        android:id="@+id/order"
+        android:icon="@drawable/baseline_ticket_24"/>
 </menu>

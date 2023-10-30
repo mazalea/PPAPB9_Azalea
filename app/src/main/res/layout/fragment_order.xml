@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/green"
+    tools:context=".Order">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            />
+        <TextView
+            android:id="@+id/txt_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Summary"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="50dp"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="543dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/img_duotix"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:src="@drawable/logo_duotix"
+                android:layout_marginTop="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="105dp"
+                    android:layout_height="135dp"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/frozenposter"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FROZEN"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pilihanBioskop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Empire XXI"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/pilihanTanggal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="27 Oktober 2023"
+                        android:textSize="16sp"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Number"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QWERTYUIOP1230"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/pilihanSeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regular"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Method"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/pilihanBank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BANK JAGO"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Number"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp35.000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Convenience Fee"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp0"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"/>
+            <View
+                android:layout_width="280dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp35.000"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="135dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

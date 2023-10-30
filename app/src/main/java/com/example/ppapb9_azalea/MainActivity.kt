@@ -3,7 +3,6 @@ package com.example.ppapb9_azalea
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import com.example.ppapb9_azalea.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -17,8 +16,7 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNav.setOnItemSelectedListener{
             when(it.itemId){
                 R.id.home -> replacefragment(Home())
-                R.id.notif -> replacefragment(Notification())
-                R.id.profile -> replacefragment(Profile())
+                R.id.order -> replacefragment(Order())
 
                 else -> {}
             }
